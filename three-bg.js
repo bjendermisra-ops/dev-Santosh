@@ -16,7 +16,6 @@
     const interactiveGroup = new THREE.Group();
     scene.add(interactiveGroup);
 
-    // Creative Holographic Core sphere wireframe
     const geometry = new THREE.IcosahedronGeometry(1.8, 2);
     const material = new THREE.MeshBasicMaterial({
       color: 0xff5e00,
@@ -27,7 +26,6 @@
     const sphere = new THREE.Mesh(geometry, material);
     interactiveGroup.add(sphere);
 
-    // Dynamic digital orbital dust points
     const pointsGeometry = new THREE.BufferGeometry();
     const count = 280;
     const positions = new Float32Array(count * 3);
@@ -52,7 +50,6 @@
     const particleSystem = new THREE.Points(pointsGeometry, pointsMaterial);
     interactiveGroup.add(particleSystem);
 
-    // Smooth Interactive Physics Rotations
     let targetX = 0, targetY = 0;
     let mouseX = 0, mouseY = 0;
     const windowHalfX = window.innerWidth / 2;
@@ -88,6 +85,6 @@
     }
     animate();
   } catch (webglError) {
-    console.warn("WebGL system is disabled or unsupported in this browser device: ", webglError);
+    console.warn("WebGL is disabled or unsupported on this device: ", webglError);
   }
 })();
