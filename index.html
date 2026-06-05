@@ -11,12 +11,11 @@
 <title>Santosh | Full-Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<!-- Fonts -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<!-- CSS Link -->
 <link rel="stylesheet" href="style.css"/>
-<!-- Three.js Library -->
+<!-- Three.js CDN Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
@@ -30,7 +29,7 @@
   <div class="loader-bar"><div class="loader-fill"></div></div>
 </div>
 
-<!-- Custom Interactive Cursor -->
+<!-- Custom Dynamic Cursor -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
@@ -48,7 +47,7 @@
   </div>
 </div>
 
-<!-- Header Navigation Bar -->
+<!-- Navigation Header -->
 <nav id="navbar">
   <a href="#home" class="nav-logo">Portfolio<span>.</span></a>
   <ul class="nav-links">
@@ -79,18 +78,16 @@
 <section class="hero" id="home">
   <div class="glow-dot gd1"></div>
   <div class="hero-content reveal-left">
-    <div class="hero-greeting">👋 Welcome to my portfolio</div>
-    <h1 class="hero-name">Hi, I'm <span>Santosh</span></h1>
+    <div class="hero-greeting">Welcome to my universe</div>
+    <h1 class="hero-name">Hi, I'm <span class="name">Santosh</span></h1>
     <div class="hero-title">
       I'm a <span class="typing-text" id="typingEl"></span><span class="cursor-blink">|</span>
     </div>
-    <p class="hero-desc">A passionate Full-Stack developer & software engineer from Uttar Pradesh, building modern web experiences with clean, efficient code and creative design.</p>
+    <p class="hero-desc">I transform complex ideas into elegant, high-performance digital realities. Building web experiences with clean, efficient code and creative design.</p>
     
     <div class="hero-social">
-      <a href="https://linkedin.com" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://wa.me/919561160799" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com/dev_santosh_28" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
     <div class="hero-btns">
       <button class="btn-primary" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
@@ -103,18 +100,30 @@
     <div class="avatar-wrapper">
       <div class="avatar-glow"></div>
     </div>
+    <!-- 🖼️ logo.webp इमेज यहाँ पर डिफ़ॉल्ट लोडिंग के साथ सेट है -->
+    <img src="logo.webp" alt="Santosh" class="hero-photo-img" onerror="this.onerror=null; this.src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheWZsKoCu7nPN7jvX1SLZfoyJR42cIebWEAjsUsFzxpsvEDoPZMv-p55Dzf-v0zPtLpjQtdM-YDqRqeviuke-Q-D0Y8bFP3z1UMRywcLdVocTEKeBIkmV4EDtMDgLem0YqJxOTZ7Ds65i9xj5d4tOdWWvzmZjWSY8198PlNUHgSPyhpWlGbcaPRDmbRkL8/s888/1000202735.png';">
     
-    <div class="float-icon fi-1"><i class="fab fa-html5"></i></div>
-    <div class="float-icon fi-2" style="font-size:.9rem;font-weight:800;">JS</div>
-    <div class="float-icon fi-3"><i class="fab fa-react"></i></div>
-    <div class="float-icon fi-4"><i class="fab fa-node-js"></i></div>
-    <div class="float-icon fi-5"><i class="fab fa-python"></i></div>
+    <div class="float-icon fi-1"><i class="fab fa-react"></i></div>
+    <div class="float-icon fi-2"><i class="fab fa-node-js"></i></div>
+    <div class="float-icon fi-3"><i class="fas fa-mobile-alt"></i></div>
+    <div class="float-icon fi-4"><i class="fab fa-aws"></i></div>
+    <div class="float-icon fi-5"><i class="fab fa-docker"></i></div>
   </div>
 
   <div class="scroll-indicator">
     <div class="scroll-wheel"><div class="scroll-dot"></div></div>
     <span>Scroll</span>
   </div>
+</section>
+
+<!-- STATS SECTION -->
+<section id="stats" class="hidden">
+    <div class="container stats-grid">
+        <div class="stat-item"><h3 class="counter" data-target="5">0<span>+</span></h3><p>Years Experience</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="50">0<span>+</span></h3><p>Projects Completed</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="30">0<span>+</span></h3><p>Happy Clients</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="100">0<span>%</span></h3><p>Client Satisfaction</p></div>
+    </div>
 </section>
 
 <!-- ABOUT SECTION -->
@@ -152,22 +161,8 @@
       <div class="section-tag">Who am I?</div>
       <h2 class="section-title">About <span>Me</span></h2>
       <div class="section-divider"></div>
-      <p class="about-text">I am a student, web developer, and software engineer currently living in Uttar Pradesh. My interests range from technology to programming. I am also interested in web development and education. I love crafting clean, performant web experiences and continuously learning new technologies to stay ahead in this fast-evolving field.</p>
-      <div class="about-counters">
-        <div class="counter-card">
-          <div class="counter-num" data-target="15">0</div>
-          <div class="counter-label">Projects</div>
-        </div>
-        <div class="counter-card">
-          <div class="counter-num" data-target="3">0</div>
-          <div class="counter-label">Years</div>
-        </div>
-        <div class="counter-card">
-          <div class="counter-num" data-target="12">0</div>
-          <div class="counter-label">Skills</div>
-        </div>
-      </div>
-      <a href="#contact" class="btn-primary" style="display:inline-flex">Learn More <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+      <p class="about-text">I'm a Full Stack Developer driven by a passion for building elegant and high-performance web and mobile applications. With a strong foundation in both front-end and back-end development, I excel at turning complex problems into intuitive and seamless user experiences. I thrive on challenges and am constantly exploring new technologies to push the boundaries of what's possible in the digital landscape.</p>
+      <a href="#contact" class="btn-primary" style="display:inline-flex">Consult & Launch Project <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
     </div>
   </div>
 </section>
@@ -176,9 +171,9 @@
 <section id="skills">
   <div style="text-align:center;margin-bottom:50px" class="reveal">
     <div class="section-tag">What I Know</div>
-    <h2 class="section-title">My <span>Skills</span></h2>
+    <h2 class="section-title">Technical <span>Arsenal</span></h2>
     <div class="section-divider" style="margin:14px auto 10px"></div>
-    <p class="section-sub" style="margin:0 auto">Technologies and tools I work with to create amazing web experiences.</p>
+    <p class="section-sub" style="margin:0 auto">Advanced technologies and industrial tools I work with to create amazing production-ready apps.</p>
   </div>
   <div class="skills-grid" id="skillsGrid"></div>
 </section>
@@ -187,9 +182,9 @@
 <section class="projects" id="projects">
   <div style="text-align:center;margin-bottom:50px" class="reveal">
     <div class="section-tag">My Work</div>
-    <h2 class="section-title">My <span>Projects</span></h2>
+    <h2 class="section-title">Elite <span>Projects</span></h2>
     <div class="section-divider" style="margin:14px auto 10px"></div>
-    <p class="section-sub" style="margin:0 auto">A showcase of my recent work. Each project is built with care and attention to detail.</p>
+    <p class="section-sub" style="margin:0 auto">A showcase of premium full-stack and cloud projects. Built with precision, scale, and high-performance.</p>
   </div>
   <div class="filter-tabs reveal">
     <button class="filter-tab active" data-filter="all">All</button>
@@ -200,84 +195,106 @@
   <div class="projects-grid" id="projectsGrid"></div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT SECTION (⚠️ Moved and integrated directly first) -->
 <section id="contact">
   <div style="text-align:center;margin-bottom:50px" class="reveal">
     <div class="section-tag">Get In Touch</div>
-    <h2 class="section-title">Contact <span>Me</span></h2>
+    <h2 class="section-title">Consult & <span>Launch Project</span></h2>
     <div class="section-divider" style="margin:14px auto 10px"></div>
-    <p class="section-sub" style="margin:0 auto">Let's discuss your project or just say hi. I'm always open to new opportunities.</p>
+    <p class="section-sub" style="margin:0 auto">Fill out your design needs, calculate your setup cost, and launch your request securely to my back-end.</p>
   </div>
   <div class="contact-grid">
+    <!-- Inline Consultation Form Container (Loads first) -->
     <div class="reveal-left">
-      <div class="contact-item">
-        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-        <div class="contact-item-text">
-          <strong>Email</strong>
-          <span>officialdivyanshnishad@gmail.com</span>
+      <div class="contact-form">
+        <div class="form-title"><i class="fas fa-rocket" style="color:var(--orange);margin-right:8px"></i>Project Proposal Form</div>
+        <div class="form-group">
+          <label>Your Name / Company</label>
+          <input type="text" id="formName" placeholder="e.g. Rahul Sharma"/>
+          <div class="form-error" id="nameErr">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label>Email Address / WhatsApp Number</label>
+          <input type="email" id="formEmail" placeholder="e.g. your@email.com / +91..."/>
+          <div class="form-error" id="emailErr">Please enter a valid email or WhatsApp number</div>
+        </div>
+        <div class="form-group">
+          <label>Reference Website URL (Optional)</label>
+          <input type="url" id="formRef" placeholder="e.g. https://example.com"/>
+        </div>
+        <div class="form-group">
+          <label>Message / Core Requirements</label>
+          <textarea id="formMsg" placeholder="Briefly describe what we are building..."></textarea>
+          <div class="form-error" id="msgErr">Please enter core message details</div>
+        </div>
+        
+        <div class="form-group">
+          <label>Select Required Features:</label>
+          <div class="features-grid" id="dynamic-features-grid"></div>
+        </div>
+
+        <div class="cost-display">
+          <h4>Estimated Project Budget</h4>
+          <h2 id="total-cost">$0</h2>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" onclick="submitForm()">
+          <i class="fas fa-server"></i> Submit Project Proposal
+        </button>
+        <div class="success-msg" id="successMsg">
+          <i class="fas fa-check-circle"></i>
+          <p>Proposal submitted successfully! 🎉</p>
+          <span style="font-size:.85rem;color:var(--text2)">I'll verify and get back to you within 24 hours.</span>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-        <div class="contact-item-text">
-          <strong>WhatsApp</strong>
-          <span>+91 95611 60799</span>
+    </div>
+
+    <!-- Direct Messaging & Physical Information (Pushed Last) -->
+    <div class="reveal-right" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>officialdivyanshnishad@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <strong>WhatsApp Contact</strong>
+            <span>+91 95611 60799</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <strong>Location</strong>
+            <span>Uttar Pradesh, India</span>
+          </div>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <div class="contact-item-text">
-          <strong>Location</strong>
-          <span>Uttar Pradesh, India</span>
-        </div>
-      </div>
+
+      <!-- Quick chat and Social anchors -->
       <div class="contact-avatar">
         <div class="contact-avatar-img">👨‍💻</div>
         <div>
           <strong style="display:block;margin-bottom:4px">Santosh</strong>
           <span style="font-size:.8rem;color:var(--text2)">Full-Stack Developer & Software Engineer</span>
-          <div style="display:flex;gap:10px;margin-top:12px">
-            <a href="https://linkedin.com" target="_blank" style="color:var(--orange);font-size:1.1rem"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/919561160799" target="_blank" style="color:var(--orange);font-size:1.1rem"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://instagram.com/dev_santosh_28" target="_blank" style="color:var(--orange);font-size:1.1rem"><i class="fab fa-instagram"></i></a>
-            <a href="#" style="color:var(--orange);font-size:1.1rem"><i class="fab fa-github"></i></a>
+          
+          <div style="display:flex;gap:12px;margin-top:14px">
+            <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" target="_blank" class="social-anchor"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919561160799" target="_blank" class="social-anchor"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="reveal-right">
-      <div class="contact-form">
-        <div class="form-title"><i class="fas fa-paper-plane" style="color:var(--orange);margin-right:8px"></i>Send Message</div>
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" id="formName" placeholder="e.g. Rahul Sharma"/>
-          <div class="form-error" id="nameErr">Please enter your name</div>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" id="formEmail" placeholder="your@email.com"/>
-          <div class="form-error" id="emailErr">Please enter a valid email</div>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea id="formMsg" placeholder="Tell me about your project..."></textarea>
-          <div class="form-error" id="msgErr">Please enter a message</div>
-        </div>
-        <button class="submit-btn" id="submitBtn" onclick="submitForm()">
-          <i class="fas fa-paper-plane"></i> Send Message
-        </button>
-        <div class="success-msg" id="successMsg">
-          <i class="fas fa-check-circle"></i>
-          <p>Message sent successfully! 🎉</p>
-          <span style="font-size:.85rem;color:var(--text2)">I'll get back to you within 24 hours.</span>
-        </div>
-        <a href="https://wa.me/919561160799?text=Hi%20Santosh%2C%20I%20found%20your%20portfolio!" target="_blank" class="wa-btn">
-          <i class="fab fa-whatsapp"></i> Quick Chat on WhatsApp
-        </a>
-        <button class="copy-email-btn" onclick="copyEmail()">
-          <i class="fas fa-copy"></i> <span id="copyBtnText">Copy Email Address</span>
-        </button>
-      </div>
+
+      <a href="#" target="_blank" id="quick-whatsapp-btn" class="wa-btn" style="margin-top: 20px;">
+        <i class="fab fa-whatsapp"></i> Instant Chat on WhatsApp
+      </a>
+      <button class="copy-email-btn" onclick="copyEmail()" style="margin-top: 10px;">
+        <i class="fas fa-copy"></i> <span id="copyBtnText">Copy Email Address</span>
+      </button>
     </div>
   </div>
 </section>
@@ -294,10 +311,8 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="footer-social">
-      <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://wa.me/919561160799" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com/dev_santosh_28" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
   </div>
   <div class="footer-copy">
@@ -309,23 +324,23 @@
 <div id="easter-egg" onclick="document.getElementById('easterModal').classList.add('show')" title="🔍"></div>
 <button id="sound-btn" onclick="toggleSound()" title="Toggle sound"><i class="fas fa-volume-mute" id="soundIcon"></i></button>
 
-<!-- Modular Javascript links (Clean separation) -->
+<!-- Modular Script links -->
 <script src="three-bg.js"></script>
 <script src="app.js"></script>
 
-<!-- 🚨 Failsafe: Loader Screen Unfreeze Guard -->
+<!-- Hard Failsafe loader unfreeze security guard -->
 <script>
   setTimeout(() => {
-    const loader = document.getElementById('loader');
-    if (loader && !loader.classList.contains('hide')) {
-      loader.classList.add('hide');
-      console.log("Failsafe activated: Loader unfreezed.");
+    const l = document.getElementById('loader');
+    if (l && !l.classList.contains('hide')) {
+      l.classList.add('hide');
+      console.log("Failsafe: Unfreezed loading screen overlay.");
       if (typeof typeEffect === 'function') typeEffect();
       if (typeof initReveal === 'function') initReveal();
       if (typeof renderSkills === 'function') renderSkills();
       if (typeof renderProjects === 'function') renderProjects();
     }
-  }, 3500); // 3.5 Seconds hard timeout limit
+  }, 3500);
 </script>
 
 </body>
