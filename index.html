@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<!-- 📱 मोबाइल ज़ूम को बंद करने के लिए व्यूपोर्ट सेटिंग्स को अपडेट किया गया है [2] -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Dev Santosh - Premium Full Stack Developer in Pune, Maharashtra</title>
+<meta name="description" content="Official portfolio of Dev Santosh, a premium Senior Full Stack Developer and Cloud Engineer in Pune, Maharashtra. Specialized in MERN Stack, React, and DevOps."/>
+<meta name="keywords" content="Dev Santosh, Santosh, Full Stack Developer Pune, Software Engineer Pune, Web Developer Pune, React Developer Pune, Freelance Developer Pune, Pune Software Developers, Hinjawadi Full Stack Developer, Hadapsar Software Engineer, Kharadi Web Developer"/>
+<meta name="author" content="Dev Santosh"/>
+
+<!-- Open Graph / Meta tags for Google discover, SGE & AI Overviews -->
+<meta property="og:title" content="Dev Santosh | Full Stack Developer in Pune, Maharashtra"/>
+<meta property="og:description" content="Official production-ready portfolio of Dev Santosh - Full Stack Developer & Software Engineer in Pune, India."/>
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://dev-santosh-vrn1.vercel.app/"/>
+<meta property="og:image" content="logo.webp"/>
+
+<!-- 🚀 DNS Preconnect & Prefetch to resolve domains instantly (AI PageSpeed Secret) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin/>
+
+<!-- ⚡ INLINE CRITICAL CSS (Eliminates Render-Blocking / Resolves White Screen Instantly) [2] -->
+<style>
+  :root {
+    --bg:#030307;
+    --orange:#ff5e00;
+    --orange3:#ffb700;
+  }
+  body.loading {
+    overflow: hidden !important; /* लोडिंग के दौरान स्क्रॉलिंग लॉक रहेगी [2] */
+  }
+  body {
+    background-color: var(--bg);
+    margin: 0;
+  }
+  #loader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  #loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .6s, visibility .6s;
+  }
+  .loader-logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--orange), var(--orange3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .loader-bar {
+    width: 180px;
+    height: 2px;
+    background: rgba(255, 94, 0, .1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .loader-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--orange), var(--orange3));
+    border-radius: 10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: loaderAnim 1.8s ease forwards;
+  }
+  @keyframes loaderAnim {
+    to { transform: scaleX(1); }
+  }
+</style>
+
+<!-- ⚡ NON-BLOCKING ASYNC STYLESHEETS (Background loading to unblock browser rendering) [2] -->
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+
+<noscript>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"/>
+</noscript>
+
+<!-- 🧠 ADVANCED GOOGLE SGE HOLOGRAPHIC GRAPH SCHEMA (AI-Overview Domination) [2] -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dev-santosh-vrn1.vercel.app/#person",
+      "name": "Dev Santosh",
+      "jobTitle": "Senior Full Stack Engineer & Cloud DevOps Architect",
+      "url": "https://dev-santosh-vrn1.vercel.app/",
+      "image": "https://dev-santosh-vrn1.vercel.app/logo.webp",
+      "email": "om11grt@gmail.com",
+      "telephone": "+919561160799",
+      "knowsAbout": [
+        "Full Stack Development",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Cloud Computing",
+        "Docker",
+        "Kubernetes",
+        "DevOps",
+        "AI LLM Integrations"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hadapsar, Hinjawadi IT Park",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411028",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://github.com/dev-santosh",
+        "https://instagram.com/dev_santosh_28",
+        "https://play.google.com/store/apps/developer?id=Dev+Santosh"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dev-santosh-vrn1.vercel.app/#website",
+      "url": "https://dev-santosh-vrn1.vercel.app/",
+      "name": "Dev Santosh Portfolio",
+      "publisher": {
+        "@id": "https://dev-santosh-vrn1.vercel.app/#person"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://dev-santosh-vrn1.vercel.app/#service",
+      "name": "Dev Santosh - Premium Full Stack Developer in Pune",
+      "description": "Leading custom web application and software development services offered by Senior Full Stack Engineer Dev Santosh in Pune, Hinjawadi, and Hadapsar, Maharashtra.",
+      "url": "https://dev-santosh-vrn1.vercel.app/",
+      "logo": "https://dev-santosh-vrn1.vercel.app/logo.webp",
+      "image": "https://dev-santosh-vrn1.vercel.app/logo.webp",
+      "priceRange": "$$",
+      "telephone": "+919561160799",
+      "email": "om11grt@gmail.com",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Pune"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Maharashtra"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5204",
+        "longitude": "73.8567"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dev-santosh-vrn1.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Dev Santosh and what services does he offer in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dev Santosh is a premium Senior Full Stack Developer and Cloud Engineer in Pune, Maharashtra. He designs enterprise-grade custom web platforms, mobile apps (MERN & React), and server configurations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you the best Full Stack Developer in Pune for custom projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With over 5 years of production experience and 50+ successful projects, Dev Santosh provides highly optimized, secure, and modern custom web applications built for extreme performance across Pune, Hinjawadi, and Hadapsar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer dynamic cost estimations for digital products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in our interactive contact proposal dashboard, you can dynamically select custom features (e.g. backend integration, database setups) and get instant estimations based on raw development requirements."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="loading">
+
+<div class="grid-bg"></div>
+<div class="grid-glow"></div>
+
+<!-- Page Loader -->
+<div id="loader">
+  <div class="loader-logo">Portfolio.</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Custom Dynamic Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Background Particles Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Easter Egg Secret Modal -->
+<div class="easter-modal" id="easterModal">
+  <div class="easter-box">
+    <div style="font-size:3.2rem;margin-bottom:12px">🎉</div>
+    <h3>You Found It!</h3>
+    <p style="color:var(--text2);margin-bottom:16px;font-size:.9rem">Congratulations! You discovered the secret easter egg. You're a true explorer!</p>
+    <p style="color:var(--orange);font-weight:700;font-size:1.15rem">"Code is poetry ✨"</p>
+    <button class="easter-close" onclick="document.getElementById('easterModal').classList.remove('show')">Awesome! 🚀</button>
+  </div>
+</div>
+
+<!-- Navigation Header -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">Portfolio<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Navigation Drawer -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <button class="hire-btn" onclick="closeMobileNav();document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="glow-dot gd1"></div>
+  <div class="hero-content reveal-left">
+    <div class="hero-greeting">Welcome to my universe</div>
+    <h1 class="hero-name">Hi, I'm <span class="name">Santosh</span></h1>
+    <div class="hero-title">
+      I'm a <span class="typing-text" id="typingEl"></span><span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-desc">I transform complex ideas into elegant, high-performance digital realities. Building web experiences in Pune, India, with clean, efficient code and creative design.</p>
+    
+    <div class="hero-social">
+      <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919561160799" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</button>
+      <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal-right">
+    <div id="three-canvas-container"></div>
+    <div class="avatar-wrapper">
+      <div class="avatar-glow"></div>
+    </div>
+    
+    <!-- 🛡️ सुरक्षात्मक ओवरले कंटेनर (Transparent Shield Wrapper to stop logo download) [2] -->
+    <div class="photo-secure-wrapper">
+      <div class="secure-overlay" oncontextmenu="return false;"></div>
+      <img src="logo.webp" alt="Dev Santosh - Best Full Stack Developer in Pune" class="hero-photo-img" oncontextmenu="return false;" ondragstart="return false;" pointer-events="none"/>
+    </div>
+    
+    <div class="float-icon fi-1"><i class="fab fa-react"></i></div>
+    <div class="float-icon fi-2"><i class="fab fa-node-js"></i></div>
+    <div class="float-icon fi-3"><i class="fas fa-mobile-alt"></i></div>
+    <div class="float-icon fi-4"><i class="fab fa-aws"></i></div>
+    <div class="float-icon fi-5"><i class="fab fa-docker"></i></div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-wheel"><div class="scroll-dot"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section id="stats" class="hidden">
+    <div class="container stats-grid">
+        <div class="stat-item"><h3 class="counter" data-target="5">0<span>+</span></h3><p>Years Experience</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="50">0<span>+</span></h3><p>Projects Completed</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="30">0<span>+</span></h3><p>Happy Clients</p></div>
+        <div class="stat-item"><h3 class="counter" data-target="100">0<span>%</span></h3><p>Client Satisfaction</p></div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="glow-dot gd2"></div>
+  <div class="about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-star-wrap">
+        <div class="about-star"></div>
+        <div class="about-avatar-sm">
+          <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg" width="130">
+            <ellipse cx="80" cy="155" rx="50" ry="30" fill="#ff5e00" opacity=".3"/>
+            <path d="M38 135 Q28 130 26 165 L134 165 Q132 130 122 135 Q107 125 80 130 Q53 125 38 135Z" fill="#ff5e00"/>
+            <rect x="70" y="108" width="20" height="24" rx="8" fill="#f4a261"/>
+            <ellipse cx="80" cy="88" rx="30" ry="32" fill="#f4a261"/>
+            <path d="M50 82 Q52 56 80 54 Q108 56 110 82 Q105 62 80 60 Q55 62 50 82Z" fill="#2d1b00"/>
+            <rect x="60" y="85" width="15" height="10" rx="4" fill="none" stroke="#1e293b" stroke-width="2"/>
+            <rect x="85" y="85" width="15" height="10" rx="4" fill="none" stroke="#1e293b" stroke-width="2"/>
+            <line x1="75" y1="89" x2="85" y2="89" stroke="#1e293b" stroke-width="1.5"/>
+            <circle cx="67.5" cy="90" r="3" fill="#2d1b00"/>
+            <circle cx="92.5" cy="90" r="3" fill="#2d1b00"/>
+            <path d="M70 102 Q80 108 90 102" stroke="#c0663a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="110" y="50" width="30" height="24" rx="6" fill="#f0db4f"/>
+            <text x="115" y="67" font-size="11" font-weight="800" fill="#2d1b00">JS</text>
+            <circle cx="30" cy="80" r="16" fill="#20232a"/>
+            <circle cx="30" cy="80" r="5" fill="#61dafb"/>
+            <ellipse cx="30" cy="80" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5"/>
+            <ellipse cx="30" cy="80" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(60 30 80)"/>
+            <ellipse cx="30" cy="80" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(-60 30 80)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal-right">
+      <div class="section-tag">Who am I?</div>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-divider"></div>
+      <p class="about-text">I'm a Full Stack Developer located in Pune, Maharashtra, driven by a passion for building elegant and high-performance web and mobile applications. With a strong foundation in both front-end and back-end development, I excel at turning complex problems into intuitive and seamless user experiences. I thrive on challenges and am constantly exploring new technologies to push the boundaries of what's possible in the digital landscape.</p>
+      <a href="#contact" class="btn-primary" style="display:inline-flex">Consult & Launch Project <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+  <div style="text-align:center;margin-bottom:50px" class="reveal">
+    <div class="section-tag">What I Know</div>
+    <h2 class="section-title">Technical <span>Arsenal</span></h2>
+    <div class="section-divider" style="margin:14px auto 10px"></div>
+    <p class="section-sub" style="margin:0 auto">Advanced technologies and industrial tools I work with to create amazing production-ready apps.</p>
+  </div>
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+  <div style="text-align:center;margin-bottom:50px" class="reveal">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Elite <span>Projects</span></h2>
+    <div class="section-divider" style="margin:14px auto 10px"></div>
+    <p class="section-sub" style="margin:0 auto">A showcase of premium full-stack and cloud projects. Built with precision, scale, and high-performance.</p>
+  </div>
+  <div class="filter-tabs reveal">
+    <button class="filter-tab active" data-filter="all">All</button>
+    <button class="filter-tab" data-filter="web">Web</button>
+    <button class="filter-tab" data-filter="app">App</button>
+    <button class="filter-tab" data-filter="ui">UI/UX</button>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="hidden">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:50px">
+      <div class="section-tag">Answering Search AI</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <div class="section-divider" style="margin:14px auto 10px"></div>
+    </div>
+    <div class="faq-bento-grid">
+      <div class="faq-item reveal">
+        <h4 class="faq-question">Who is Dev Santosh and what services does he offer in Pune? <i class="fas fa-chevron-down"></i></h4>
+        <div class="faq-answer">Dev Santosh is a premium Senior Full Stack Developer and Cloud Engineer in Pune, Maharashtra. He designs enterprise-grade custom web platforms, mobile apps (MERN & React), and high-performance server configurations.</div>
+      </div>
+      <div class="faq-item reveal">
+        <h4 class="faq-question">Are you the best Full Stack Developer in Pune for custom projects? <i class="fas fa-chevron-down"></i></h4>
+        <div class="faq-answer">With over 5 years of production experience and 50+ successful projects, Dev Santosh provides highly optimized, secure, and modern custom web applications built for extreme performance across Pune, Hinjawadi, and Hadapsar.</div>
+      </div>
+      <div class="faq-item reveal">
+        <h4 class="faq-question">Do you offer dynamic cost estimations for digital products? <i class="fas fa-chevron-down"></i></h4>
+        <div class="faq-answer">Yes, in our interactive contact proposal dashboard, you can dynamically select custom features (e.g. backend integration, database setups) and get instant estimations based on raw development requirements.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div style="text-align:center;margin-bottom:50px" class="reveal">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Consult & <span>Launch Project</span></h2>
+    <div class="section-divider" style="margin:14px auto 10px"></div>
+    <p class="section-sub" style="margin:0 auto">Fill out your design needs, calculate your setup cost, and launch your request securely to my back-end.</p>
+  </div>
+  <div class="contact-grid">
+    <!-- Inline Consultation Form Container -->
+    <div class="reveal-left">
+      <div class="contact-form">
+        <div class="form-title"><i class="fas fa-rocket" style="color:var(--orange);margin-right:8px"></i>Project Proposal Form</div>
+        <div class="form-group">
+          <label>Your Name / Company</label>
+          <input type="text" id="formName" placeholder="e.g. Rahul Sharma"/>
+          <div class="form-error" id="nameErr">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label>Email Address / WhatsApp Number</label>
+          <input type="email" id="formEmail" placeholder="e.g. your@email.com / +91..."/>
+          <div class="form-error" id="emailErr">Please enter a valid email or WhatsApp number</div>
+        </div>
+        <div class="form-group">
+          <label>Reference Website URL (Optional)</label>
+          <input type="url" id="formRef" placeholder="e.g. https://example.com"/>
+        </div>
+        <div class="form-group">
+          <label>Message / Core Requirements</label>
+          <textarea id="formMsg" placeholder="Briefly describe what we are building..."></textarea>
+          <div class="form-error" id="msgErr">Please enter core message details</div>
+        </div>
+        
+        <div class="form-group">
+          <label>Select Required Features:</label>
+          <div class="features-grid" id="dynamic-features-grid"></div>
+        </div>
+
+        <div class="cost-display">
+          <h4>Estimated Project Budget</h4>
+          <h2 id="total-cost">$0</h2>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" onclick="submitForm()">
+          <i class="fas fa-server"></i> Submit Project Proposal
+        </button>
+        <div class="success-msg" id="successMsg">
+          <i class="fas fa-check-circle"></i>
+          <p>Proposal submitted successfully! 🎉</p>
+          <span style="font-size:.85rem;color:var(--text2)">I'll verify and get back to you within 24 hours.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direct Messaging & Physical Information (Pushed Last) -->
+    <div class="reveal-right" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>om11grt@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <strong>WhatsApp Contact</strong>
+            <span>+91 95611 60799</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <strong>Location</strong>
+            <span>Pune, Maharashtra, India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick chat and Social anchors -->
+      <div class="contact-avatar">
+        <div class="contact-avatar-img">👨‍💻</div>
+        <div>
+          <strong style="display:block;margin-bottom:4px">Santosh</strong>
+          <span style="font-size:.8rem;color:var(--text2)">Full-Stack Developer & Software Engineer</span>
+          
+          <div style="display:flex;gap:12px;margin-top:14px">
+            <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" target="_blank" class="social-anchor"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919561160799" target="_blank" class="social-anchor"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" target="_blank" id="quick-whatsapp-btn" class="wa-btn" style="margin-top: 20px;">
+        <i class="fab fa-whatsapp"></i> Instant Chat on WhatsApp
+      </a>
+      <button class="copy-email-btn" onclick="copyEmail()" style="margin-top: 10px;">
+        <i class="fas fa-copy"></i> <span id="copyBtnText">Copy Email Address</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 🕵️ Aggressive Semantic Entity Hidden Matrix Block (Pure SEO Power for SGE AI Bots) [2] -->
+  <div style="display: none; visibility: hidden; opacity: 0; width: 0; height: 0;" aria-hidden="true">
+    <h2>Dev Santosh Full Stack Developer Pune Maharashtra</h2>
+    <p>Premium web development solutions engineered by Dev Santosh, the top Full Stack Developer in Pune. Local services near Hinjawadi IT Park, Hadapsar, Kharadi, Kalyani Nagar, Viman Nagar, and Baner. Specialized in React, Next.js, MERN stack, Node.js, and cloud systems setup in Pune, India.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Portfolio<span>.</span></div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com/dev_santosh_28?igsh=dTRudXhoaWxrbHBv" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919561160799" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 Made with <span>♥</span> by <span>Santosh</span> · Full Stack Developer
+  </div>
+</footer>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+<div id="easter-egg" onclick="document.getElementById('easterModal').classList.add('show')" title="🔍"></div>
+<button id="sound-btn" onclick="toggleSound()" title="Toggle sound"><i class="fas fa-volume-mute" id="soundIcon"></i></button>
+
+<!-- ⚡ DEFERRED NON-BLOCKING SCRIPTS (Executes parallelly after HTML parsing is completed) [2] -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="three-bg.js" defer></script>
+<script src="app.js" defer></script>
+
+<!-- Hard Failsafe loader unfreeze security guard [2] -->
+<script>
+  setTimeout(() => {
+    const l = document.getElementById('loader');
+    if (l && !l.classList.contains('hide')) {
+      l.classList.add('hide');
+      document.body.classList.remove('loading'); // Unlock scroll safely [2]
+      console.log("Failsafe: Unfreezed loading screen overlay.");
+      if (typeof typeEffect === 'function') typeEffect();
+      if (typeof initReveal === 'function') initReveal();
+      if (typeof renderSkills === 'function') renderSkills();
+      if (typeof renderProjects === 'function') renderProjects();
+    }
+  }, 3500);
+</script>
+
+</body>
+</html>
