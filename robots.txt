@@ -1,0 +1,21 @@
+# 🤖 Robots.txt for Dev Santosh Portfolio
+
+User-agent: *
+Allow: /
+Disallow: /api/           # वर्सेल बैकएंड API प्रॉक्सी फ़ोल्डर को ब्लॉक करें ताकि बॉट्स वहाँ रिक्वेस्ट वेस्ट न करें
+
+# 🧠 AI Search Engine crawlers allow rule
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# 🔗 Sitemap path (⚠️ 'your-domain.vercel.app' की जगह अपना वास्तविक लाइव डोमेन यूज़ करें)
+Sitemap: https://your-domain.vercel.app/sitemap.xml
