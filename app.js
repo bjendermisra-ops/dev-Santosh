@@ -141,6 +141,19 @@ function renderFeatures() {
   calcCost();
 }
 
+// ─── FAQ INTERACTIVE ACCORDION LOGIC ──────────────────────────────
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      faqItems.forEach(i => i.classList.remove('active'));
+      if(!isActive) item.classList.add('active');
+      playClick();
+    });
+  });
+}
+
 // ─── TYPING EFFECT ────────────────────────────────────────────────
 const typingTexts = ['Senior Full Stack Engineer', 'Cloud & DevOps Architect', 'Web3 Developer'];
 let tIdx=0, cIdx=0, deleting=false;
@@ -260,7 +273,7 @@ async function submitForm(){
     }
   } catch (error) {
     console.error("Connection error: ", error);
-    alert("Connection timeout. Make sure you are deploying on Vercel to access backend proxy routes.");
+    alert("Connection error occurred. Make sure Vercel Env variables are configured.");
     btn.disabled = false;
     btn.innerHTML = '<i class="fas fa-server"></i> Submit Project Proposal';
   }
@@ -298,7 +311,7 @@ function updateQuickWhatsAppLink() {
 
 // ─── COPY EMAIL ──────────────────────────────────────────────────
 function copyEmail(){
-  navigator.clipboard.writeText('santosh2grt@gmail.com').then(()=>{
+  navigator.clipboard.writeText('om11grt@gmail.com').then(()=>{
     const btn = document.getElementById('copyBtnText');
     if(btn) {
       btn.textContent = 'Copied! ✓';
@@ -314,9 +327,9 @@ function downloadCV(){
   const content = `SANTOSH
 Senior Full Stack Engineer | Cloud & DevOps Architect
 ===================================================
-Email: santosh2grt@gmail.com
+Email: om11grt@gmail.com
 WhatsApp: +91 95611 60799
-Location: Pune Maharashtra, India
+Location: Pune, Maharashtra, India
 
 TECHNICAL ARSENAL
 -----------------
@@ -393,6 +406,7 @@ window.addEventListener('load',()=>{
   renderSkills();
   renderProjects();
   renderFeatures();
+  initFAQ();
   updateQuickWhatsAppLink();
   updateSoundUI();
 });
